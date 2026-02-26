@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMKN 1 Gondang Nganjuk - TEFA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-purple: #4b0082;
+            --light-purple: #f3e5f5;
+            --accent-purple: #9c27b0;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--light-purple); }
+        
+        .navbar { background-color: var(--primary-purple) !important; }
+        
+        .hero-section {
+            background: linear-gradient(rgba(75, 0, 130, 0.7), rgba(75, 0, 130, 0.7)), url('WhatsApp Image 2026-02-23 at 10.26.04.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .section-title { color: var(--primary-purple); font-weight: bold; margin-bottom: 40px; text-transform: uppercase; }
+
+        .card-jurusan {
+            border: none;
+            border-radius: 15px;
+            transition: 0.3s;
+            height: 100%;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .card-jurusan:hover { transform: translateY(-10px); box-shadow: 0 8px 25px rgba(75, 0, 130, 0.2); }
+        
+        .card-img-top { height: 250px; object-fit: cover; }
+        
+        .badge-purple { background-color: var(--accent-purple); color: white; margin-bottom: 10px; display: inline-block; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; }
+
+        footer { background-color: var(--primary-purple); color: white; padding: 30px 0; margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">SMKN 1 GONDANG</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#profil">Profil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#jurusan">Jurusan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero-section">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Pusat Keunggulan & TEFA</h1>
+            <p class="lead">SMK Negeri 1 Gondang Nganjuk - Mencetak Generasi Kompeten & Mandiri</p>
+        </div>
+    </div>
+
+    <section id="profil" class="container my-5 text-center">
+        <h2 class="section-title">Profil Sekolah</h2>
+        <p class="col-lg-8 mx-auto">SMKN 1 Gondang adalah sekolah kejuruan yang berdedikasi tinggi dalam menghasilkan tenaga kerja profesional. Dengan fasilitas Teaching Factory (TEFA), kami memastikan setiap siswa mendapatkan pengalaman kerja nyata sesuai standar industri.</p>
+    </section>
+
+    <section id="jurusan" class="container my-5">
+        <h2 class="section-title text-center">7 Program Keahlian</h2>
+        <div class="row g-4">
+            
+            <div class="col-md-4">
+                <div class="card card-jurusan">
+                    <img src="WhatsApp Image 2026-02-23 at 10.26.04.jpeg" class="card-img-top" alt="AMP">
+                    <div class="card-body">
+                        <span class="badge-purple">AMP</span>
+                        <h5 class="fw-bold">Alat Mekanisasi Pertanian</h5>
+                        <p class="small text-muted">Penerapan teknologi mesin pertanian untuk efisiensi, produktivitas, dan kualitas hasil tani.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card card-jurusan">
+                    <img src="WhatsApp Image 2026-02-23 at 10.26.04 (1).jpeg" class="card-img-top" alt="ATPH">
+                    <div class="card-body">
+                        <span class="badge-purple">ATPH</span>
+                        <h5 class="fw-bold">Agribisnis Tanaman Pangan & Hortikultura</h5>
+                        <p class="small text-muted">Penguasaan proses bisnis pertanian mulai dari pengadaan sarana hingga pemasaran hasil panen.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card card-jurusan">
+                    <img src="WhatsApp Image 2026-02-23 at 10.26.05.jpeg" class="card-img-top" alt="ATU">
+                    <div class="card-body">
+                        <span class="badge-purple">ATU</span>
+                        <h5 class="fw-bold">Agribisnis Ternak Unggas</h5>
+                        <p class="small text-muted">Kompetensi peternakan unggas pedaging dan petelur serta pengelolaan pakan ternak.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card card-jurusan">
+                    <img src="WhatsApp Image 2026-02-23 at 10.26.05 (1).jpeg" class="card-img-top" alt="TKR">
+                    <div class="card-body">
+                        <span class="badge-purple">TKR</span>
+                        <h5 class="fw-bold">Teknik Kendaraan Ringan</h5>
+                        <p class="small text-muted">Pemeliharaan, perbaikan, dan sistem kerja otomotif kendaraan roda empat.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card card-jurusan">
+                    <img src="WhatsApp Image 2026-02-23 at 10.26.06.jpeg" class="card-img-top" alt="APHP">
+                    <div class="card-body">
+                        <span class="badge-purple">APHP</span>
+                        <h5 class="fw-bold">Agribisnis Pengolahan Hasil Pertanian</h5>
+                        <p class="small text-muted">Inovasi pengolahan, pengemasan, dan pemasaran produk pertanian menjadi barang bernilai tambah.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card card-jurusan">
+                    <img src="WhatsApp Image 2026-02-23 at 10.26.06 (1).jpeg" class="card-img-top" alt="TKJ">
+                    <div class="card-body">
+                        <span class="badge-purple">TKJ</span>
+                        <h5 class="fw-bold">Teknik Komputer Jaringan</h5>
+                        <p class="small text-muted">Instalasi, konfigurasi jaringan komputer, manajemen perangkat lunak, dan layanan internet.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mx-auto">
+                <div class="card card-jurusan">
+                    <img src="WhatsApp Image 2026-02-23 at 10.26.07.jpeg" class="card-img-top" alt="TSM">
+                    <div class="card-body">
+                        <span class="badge-purple">TSM</span>
+                        <h5 class="fw-bold">Teknik Sepeda Motor</h5>
+                        <p class="small text-muted">Perawatan dan perbaikan sistem sepeda motor dengan teknologi konvensional maupun terbaru.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-1">© 2026 SMK Negeri 1 Gondang Nganjuk</p>
+            <p class="small">Jl. Raya Gondang-Lengkong, Desa Balonggebang, Kab. Nganjuk</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
