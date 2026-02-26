@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TEFA SMKN 1 GONDANG NGANJUK</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
             --purple-dark: #4b0082;
@@ -18,11 +19,29 @@
             background-size: cover; background-position: center; color: white; padding: 100px 0; text-align: center;
         }
         .section-title { color: var(--purple-dark); font-weight: bold; margin-bottom: 40px; text-transform: uppercase; border-bottom: 3px solid var(--purple-main); display: inline-block; }
+        
+        /* Badge Akreditasi */
+        .badge-akreditasi {
+            background-color: #ffd700;
+            color: #4b0082;
+            font-weight: bold;
+            padding: 8px 20px;
+            border-radius: 50px;
+            display: inline-block;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
         .card-jurusan { border: none; border-radius: 15px; transition: 0.3s; height: 100%; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); background: white; }
         .card-jurusan:hover { transform: translateY(-10px); box-shadow: 0 8px 25px rgba(106, 27, 154, 0.3); }
         .card-img-top { height: 220px; object-fit: cover; }
         .card-body { padding: 20px; }
         .badge-jurusan { background-color: var(--purple-main); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; margin-bottom: 10px; display: inline-block; }
+        
+        /* Section Kontak */
+        #kontak { background-color: white; border-radius: 20px; padding: 40px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
+        .contact-icon { font-size: 2rem; color: var(--purple-main); margin-bottom: 15px; }
+        
         footer { background-color: var(--purple-dark); color: white; padding: 30px 0; margin-top: 50px; }
     </style>
 </head>
@@ -36,6 +55,9 @@
 
     <header class="hero">
         <div class="container">
+            <div class="badge-akreditasi">
+                <i class="fas fa-award"></i> TERAKREDITASI A (UNGGUL)
+            </div>
             <h1 class="display-4 fw-bold">Pusat Keunggulan & TEFA</h1>
             <p class="lead">SMK Negeri 1 Gondang Nganjuk - Mencetak Lulusan Kompeten & Profesional</p>
         </div>
@@ -51,7 +73,7 @@
                     <div class="card-body">
                         <span class="badge-jurusan">AMP</span>
                         <h5 class="fw-bold">Alat Mekanisasi Pertanian</h5>
-                        <p class="small text-muted">Mempelajari penerapan teknologi, alat, dan mesin pertanian untuk meningkatkan efisiensi, produktivitas, dan kualitas hasil pertanian dari tahap budidaya hingga pascapanen.</p>
+                        <p class="small text-muted">Mempelajari penerapan teknologi, alat, dan mesin pertanian untuk meningkatkan efisiensi dan produktivitas hasil tani.</p>
                     </div>
                 </div>
             </div>
@@ -62,7 +84,7 @@
                     <div class="card-body">
                         <span class="badge-jurusan">ATPH</span>
                         <h5 class="fw-bold">Agribisnis Tanaman Pangan & Holtikultura</h5>
-                        <p class="small text-muted">Mempersiapkan siswa menguasai proses bisnis pertanian dari pengadaan sarana produksi, budidaya, hingga pemasaran komoditas pangan dan hortikultura.</p>
+                        <p class="small text-muted">Mempersiapkan siswa menguasai budidaya tanaman pangan dan hortikultura hingga proses pemasaran komoditas.</p>
                     </div>
                 </div>
             </div>
@@ -73,7 +95,7 @@
                     <div class="card-body">
                         <span class="badge-jurusan">ATU</span>
                         <h5 class="fw-bold">Agribisnis Ternak Unggas</h5>
-                        <p class="small text-muted">Mempelajari usaha peternakan unggas pedaging, petelur, pakan, hingga pembibitan dan penanganan limbah ternak.</p>
+                        <p class="small text-muted">Mempelajari usaha peternakan unggas pedaging, petelur, pembibitan, hingga penanganan limbah ternak.</p>
                     </div>
                 </div>
             </div>
@@ -84,7 +106,7 @@
                     <div class="card-body">
                         <span class="badge-jurusan">TKR</span>
                         <h5 class="fw-bold">Teknik Kendaraan Ringan</h5>
-                        <p class="small text-muted">Berfokus pada pemeliharaan, perbaikan, dan sistem kerja kendaraan roda empat atau mobil untuk menyiapkan tenaga terampil otomotif.</p>
+                        <p class="small text-muted">Berfokus pada pemeliharaan, perbaikan, dan sistem kerja kendaraan roda empat untuk tenaga otomotif ahli.</p>
                     </div>
                 </div>
             </div>
@@ -95,7 +117,7 @@
                     <div class="card-body">
                         <span class="badge-jurusan">APHP</span>
                         <h5 class="fw-bold">Agribisnis Pengolahan Hasil Pertanian</h5>
-                        <p class="small text-muted">Berfokus pada pengolahan hasil pertanian menjadi produk bernilai tambah, pengemasan, serta bimbingan menjadi wirausahawan pangan.</p>
+                        <p class="small text-muted">Berfokus pada pengolahan hasil pertanian menjadi produk bernilai tambah, pengemasan, dan wirausaha pangan.</p>
                     </div>
                 </div>
             </div>
@@ -106,29 +128,55 @@
                     <div class="card-body">
                         <span class="badge-jurusan">TKJ</span>
                         <h5 class="fw-bold">Teknik Komputer Jaringan</h5>
-                        <p class="small text-muted">Berfokus pada instalasi, konfigurasi, dan pemeliharaan jaringan komputer, perakitan perangkat keras, dan layanan internet.</p>
+                        <p class="small text-muted">Berfokus pada instalasi jaringan komputer, pemeliharaan perangkat keras, dan sistem administrasi server.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4 mx-auto">
                 <div class="card card-jurusan">
                     <img src="WhatsApp Image 2026-02-23 at 10.26.07.jpeg" class="card-img-top" alt="TSM">
                     <div class="card-body">
                         <span class="badge-jurusan">TSM</span>
                         <h5 class="fw-bold">Teknik Sepeda Motor</h5>
-                        <p class="small text-muted">Keahlian otomotif yang berfokus pada perawatan dan perbaikan sepeda motor dengan sistem konvensional maupun teknologi baru.</p>
+                        <p class="small text-muted">Keahlian otomotif yang berfokus pada perawatan dan perbaikan sepeda motor dengan teknologi terkini.</p>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
+    <section class="container my-5">
+        <div id="kontak">
+            <h2 class="section-title mb-5 d-block text-center">Hubungi Kami</h2>
+            <div class="row text-center g-4">
+                <div class="col-md-4">
+                    <i class="fas fa-map-marker-alt contact-icon"></i>
+                    <h5 class="fw-bold">Alamat</h5>
+                    <p class="small text-muted">Jl. Raya Gondang-Lengkong, Desa Balonggebang, Kec. Gondang, Kab. Nganjuk, Jawa Timur</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <h5 class="fw-bold">Email & Web</h5>
+                    <p class="small text-muted">smkn1gondang@gmail.com<br>www.smkn1gondang-ngj.sch.id</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-phone-alt contact-icon"></i>
+                    <h5 class="fw-bold">Telepon</h5>
+                    <p class="small text-muted">(0358) 611612<br>Senin - Jumat: 07.00 - 15.30</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <footer class="text-center">
         <div class="container">
             <p class="mb-1">© 2026 SMK Negeri 1 Gondang Nganjuk</p>
-            <p class="small">Jl. Raya Gondang-Lengkong, Desa Balonggebang, Kab. Nganjuk</p>
+            <div class="mt-2">
+                <a href="#" class="text-white me-3 text-decoration-none"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white me-3 text-decoration-none"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white text-decoration-none"><i class="fab fa-youtube"></i></a>
+            </div>
         </div>
     </footer>
 
